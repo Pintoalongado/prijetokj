@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Testador eds</title>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="funcoes.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			background: rgb(21,21,21);
+		}
+		body{
+			text-align: center;
+			color: white;
+			overflow-y: auto;
+		}
+		#lista{
+			width: 40%;
+			height: 40%;
+			outline: none;
+			margin-top: 20px;
+			background: transparent;
+			border:none;
+			resize: none;
+			box-shadow: 0 0 5px lime;
+			text-align: center;
+			text-shadow: 0 0 3px lime;
+			font-size: 20px;
+			color:white;
+			padding: 10px;
+			margin-left: calc(50% - 20%);
+
+		}
+		h3{
+			margin-top: 10px;
+		}
+		button{
+			position: relative;
+			margin-left: calc(50% - 10%);
+			width: 20%;
+			height: 40px;
+			border:none;
+			outline: none;
+			border-radius: 10px;
+			cursor: pointer;
+			background: #005CC8;
+			color:white;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+		input{
+			width: 20%;
+			height: 40px;
+			border:none;
+			outline: none;
+			margin-left: calc(50% - 10%);
+			border-radius: 10px;
+			cursor: pointer;
+			margin-top: 20px;
+			text-align-last: center;
+		}
+	</style>
+	</head>
+	<body>
+		<h3>Testador eds</h3>
+		<textarea name="lista" id="lista" cols="30" rows="10" placeholder="Lista de CPF, SOMENTE CPF!"></textarea>
+		<button id="testar">Iniciar</button>
+		<input type="number" placeholder="quantidade de cpf a gerar" id="qt">
+		<button id="gerar">Gerar CPF</button>
+		<input type="checkbox" name="g" id="g">
+		<label for="g">Exibir reprovadas</label>
+		<h3>Aprovadas / Reprovadas apareceram abaixo</h3>
+	</body>
+</html>
